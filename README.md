@@ -93,15 +93,7 @@ data/precip.mon.mean.nc           GPCP v2.3, 20 MB
 data/ne_110m_coastline.geojson    Natural Earth coastlines
 ```
 
-Both data files may sit either in `data/` or beside the notebooks at the top
-level — Notebook 00's `fetch()` checks both before downloading anything.
-
-All four notebooks ship with their figures already embedded, so they can be read
-before being run.
-
-**No cartopy anywhere.** Coastlines are drawn from the GeoJSON with plain
-matplotlib in about twenty readable lines. Cartopy is a notorious install failure
-for beginners and buys nothing at this stage.
+Both data files may sit either in `data/` 
 
 ---
 

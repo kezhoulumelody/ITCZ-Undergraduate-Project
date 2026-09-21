@@ -67,22 +67,6 @@ Both data files may sit either in `data/`
 
 ---
 
-## Setting up the repository (advisor)
-
-The Codespaces route needs these files in a GitHub repo. From this folder:
-
-```bash
-git init
-git add .
-git commit -m "ITCZ notebooks for undergraduate project"
-gh repo create fsu-itcz-project --private --source=. --push
-```
-
-(or create the repo through the GitHub web UI and push to it). Then add Veronica
-as a collaborator: **Settings → Collaborators → Add people**.
-
----
-
 ## Notes on pedagogy
 
 The notebooks are written to be **read**, so try your best to understand the equations and texts attached to each notebook. 

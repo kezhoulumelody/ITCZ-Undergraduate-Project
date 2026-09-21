@@ -119,55 +119,13 @@ gh repo create fsu-itcz-project --private --source=. --push
 (or create the repo through the GitHub web UI and push to it). Then add Veronica
 as a collaborator: **Settings → Collaborators → Add people**.
 
-Notes:
-
-- The 20 MB data file commits fine. GitHub warns above 50 MB and blocks at 100 MB,
-  so no Git LFS needed here — but it would be for CMIP6 output later.
-- The devcontainer uses the Microsoft Python 3.11 image and `pip install -r
-  requirements.txt` on create. A conda-based container would work too but takes
-  several minutes longer to build, which matters when a student is waiting.
-- **I could not test the Codespace itself** — this session has no way to launch
-  one. The JSON is valid and the package list is the same one all four notebooks
-  were executed against here, but the first build is worth doing yourself before
-  handing over the link.
-- `environment.yml` pins `conda-forge` with `nodefaults`, which keeps conda off
-  Anaconda Inc.'s channels and their institutional licensing conditions.
-
-### A caveat that cost an hour
-
-FSU's network policy blocks `downloads.psl.noaa.gov` for automated sessions, so
-Notebook 00's built-in download will fail from inside a managed environment. It
-works fine from Codespaces and from a home connection. The data file ships in the
-repo regardless, and the notebook looks locally first.
-
 ---
 
 ## Notes on pedagogy
 
-The notebooks are written to be **read**, not just executed — roughly half the
-content is prose and derivation. Every formula is derived rather than asserted,
-because a freshman handed only formulas has no way to tell which ones are physics
-and which are curve fits.
+The notebooks are written to be **read**, so try your best to understand the equations and texts attached to each notebook. 
 
-Notebook 00 deliberately **opens with a failure**: the GPCP file has a corrupt
-`time_bnds` variable that makes `xarray.open_dataset` throw. The notebook lets it
-throw, reads the error, and fixes it. Meeting a real data defect in the first ten
-minutes sets a more honest expectation than a dataset pre-cleaned into silence.
-
-Three habits are pushed throughout:
-
-1. **Check your coordinates and units.** Notebook 00 shows the silent-`NaN`
-   failure mode of assuming latitude runs north-to-south when it does not.
-2. **Know where your approximation breaks.** Notebook 03 §5 pushes a theory past
-   its validity and shows the failure rather than staying inside the safe range.
-3. **State which claim you are making.** Direction, magnitude and absolute value
-   are three different levels of confidence.
 
 ### On AI assistants
 
-If she installs GitHub Copilot or similar in VS Code, consider leaving **chat**
-enabled — "explain this error" is genuinely useful for a beginner working alone —
-but turning off **inline completions** for the first few weeks (`Ctrl+Shift+P` →
-"Toggle Inline Suggestions"). An assistant that writes the `groupby` and the
-centroid function removes exactly the struggle the notebooks are built around.
-The "Your turn" boxes are unaffected either way: they ask what she *observed*.
+Our group welcome any RESPONSIBLE use of AI assistants. In your VS Code, consider leaving **chat** enabled. When you see an error you don't understand, type "explain this error" in the chat box. Try to understand why your code is not working and how you can write them better the next time. 

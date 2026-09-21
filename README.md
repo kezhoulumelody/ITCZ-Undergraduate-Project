@@ -1,12 +1,12 @@
 # The double-ITCZ project
 
-A ladder of Python notebooks taking someone with no coding background from
+This project provide a ladder of Python notebooks taking undergraduates with no coding background from
 "here is what rain looks like" to the longest-standing systematic error in
 climate modelling.
 
 ---
 
-## Quick start (Veronica, read this first)
+## Quick start 
 
 You will run these in **VS Code**. The fastest route installs nothing on your
 laptop.

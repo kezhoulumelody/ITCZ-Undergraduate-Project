@@ -32,7 +32,7 @@ offline, are in the *Before you start* section at the top of Notebook 00.
 
 ## The notebooks
 
-| Notebook | Science | Python taught | Headline figure |
+| Notebook | Climate knowledge you will learn | Python skill you will learn | Headline figure |
 |---|---|---|---|
 | `00_observed_rainfall.ipynb` | GPCP satellite rainfall, 1979–2025. netCDF anatomy, seasonal climatology, the ITCZ, precipitation centroid and hemispheric asymmetry index, the eastern-vs-western Pacific contrast | reading netCDF with `xarray`, `groupby`, area weighting, `pcolormesh` maps, coastlines, **animation**, Hovmöller | the 12-frame animation of the rainband migrating |
 | `01_energy_balance.ipynb` | Planetary energy balance, greenhouse effect, ice–albedo feedback, multiple equilibria, Snowball Earth, hysteresis | variables, functions, arrays, loops, root finding, forward Euler | the hysteresis loop |

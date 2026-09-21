@@ -47,36 +47,6 @@ Notebooks 01–03 need only `numpy`, `scipy` and `matplotlib` and no data files,
 they run anywhere. Notebook 00 additionally needs `xarray`, `netCDF4` and
 `pillow`, all of which the Codespace and `environment.yml` provide.
 
-### The observational numbers she derives in Notebook 00
-
-These are the targets every model in the later notebooks gets scored against:
-
-| sector | centroid | asymmetry index | peak |
-|---|---|---|---|
-| East Pacific (160°W–80°W) | **+5.15°N** | **+0.569** | 8.0 mm/day at 8.8°N |
-| West Pacific (150°E–160°W) | −2.11°N | −0.108 | 8.4 mm/day at 6.2°N |
-| Africa / Indian (40–120°E) | +0.16°N | −0.041 | 5.9 mm/day at 3.8°S |
-| Global | +0.75°N | +0.105 | 6.0 mm/day at 6.2°N |
-
-The East/West Pacific split is deliberate. Both are "the Pacific" and they give
-opposite answers, because the South Pacific Convergence Zone sits in the western
-box. The eastern ITCZ never meaningfully leaves the northern hemisphere
-(minimum monthly centroid −0.3° in March); the western centroid reaches −5.4°.
-Quoting a number without stating the box is meaningless, and she meets that fact
-in week one rather than in peer review.
-
-### Results the theory notebooks get right
-
-- Notebook 02 predicts peak poleward energy transport of **5.5 PW near 37°N**;
-  observations say about 5.5 PW near 35°N.
-- Notebook 03's control run gives **27°C at the equator, −21°C at the pole,
-  5.6 PW at 33°N** from one tuned parameter.
-- Notebook 03's ITCZ sensitivity is **3.7° per PW** of cross-equatorial energy
-  transport; published estimates cluster near 3°/PW.
-
-They also get things wrong in instructive ways, and say so — the energetic
-framework predicts an ITCZ near 1°N against the ~5°N she measures herself.
-
 ---
 
 ## Repository contents

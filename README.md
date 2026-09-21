@@ -8,8 +8,7 @@ climate modelling.
 
 ## Quick start 
 
-You will run these in **VS Code**. The fastest route installs nothing on your
-laptop.
+You will run these in **VS Code**. You don't  need to install anything on your laptop.
 
 1. Make a **GitHub account** with your FSU email at `github.com`.
 2. Claim **student benefits** at `education.github.com` → "Get student benefits".

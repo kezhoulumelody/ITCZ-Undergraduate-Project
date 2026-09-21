@@ -1,0 +1,10 @@
+# Same packages as environment.yml, for the Codespaces container (pip is much
+# faster to build than a conda solve). Keep the two files in step.
+numpy
+scipy
+pandas
+matplotlib
+xarray
+netCDF4
+pillow
+ipykernel

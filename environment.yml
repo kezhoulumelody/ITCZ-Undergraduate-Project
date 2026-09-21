@@ -1,0 +1,24 @@
+# Conda environment for the ITCZ / double-ITCZ notebooks.
+#
+#   conda env create -f environment.yml
+#   conda activate climate
+#
+# Uses conda-forge only. "nodefaults" keeps conda off Anaconda Inc.'s own
+# channels, which carry licensing conditions for many institutions.
+name: climate
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - xarray
+  - netcdf4
+  - pillow          # writes the animated GIF
+  - ipykernel       # lets VS Code use this environment as a notebook kernel
+  - jupyterlab      # optional: only if she wants to run outside VS Code
